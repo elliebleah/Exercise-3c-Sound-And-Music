@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 6195759755926184941}
   - component: {fileID: 4390248623075474704}
   - component: {fileID: 4461624536069388539}
+  - component: {fileID: 3083739819512247791}
   m_Layer: 0
   m_Name: Ball
   m_TagString: ball
@@ -198,9 +199,11 @@ MonoBehaviour:
   _data:
     _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"initialSpeed","value":{"$content":10.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"highlightRenderer","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.SpriteRenderer,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"cometPrefab","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 1512298285755155295}
+    - {fileID: 4650596125386521317, guid: 5a88db4808e1b9b4a888c01397ba7e7b, type: 3}
 --- !u!114 &4461624536069388539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,6 +220,22 @@ MonoBehaviour:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
     - {fileID: 11400000, guid: e413aabbbe4e3854fa29682552cf3d38, type: 2}
+--- !u!114 &3083739819512247791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4650596125386521317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c315ac1abbcc1c54d8f710e83f576333, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionSounds:
+  - {fileID: 8300000, guid: b93c8f8313fb0584eab83bdb73780234, type: 3}
+  - {fileID: 8300000, guid: fa3f8661157557b49a1a3dc60867c972, type: 3}
+  - {fileID: 8300000, guid: 9d24f71a9651c6d4589669b0bbef27a0, type: 3}
 --- !u!1 &8060886088806652135
 GameObject:
   m_ObjectHideFlags: 0
